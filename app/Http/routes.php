@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/mascotas', 'MascotaController');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

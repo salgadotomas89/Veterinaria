@@ -7,12 +7,11 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <ul class="nav nav-pills">
-                            <li  class=""><a href="{{ url('/mascotas') }}">Volver</a></li>
+                            <li  class=""><a href="{{ url('/') }}">Editar mascota</a></li>
                         </ul>
                     </div>
                     <div class="panel-body">
-                        {!! Form::open(array('route'=>'mascotas.store')) !!}
-                        <div class="form-group">
+                        {!! Form::model($mascota,array('route'=>['mascotas.update',$mascota->id],'method'=>'PUT')) !!}                        <div class="form-group">
                             {!! Form::label('rut','ingrese el rut') !!}
                             {!! Form::text('rut',null,['class'=>'form-control']) !!}
                         </div>
@@ -41,7 +40,7 @@
                             {!! Form::text('temperatura',null,['class'=>'form-control']) !!}
                         </div>
                         <div class="form-group">
-                            {!! Form::button('crear',['type'=>'submit','class'=>'btn btn-primary']) !!}
+                            {!! Form::button('actualizar',['type'=>'submit','class'=>'btn btn-primary']) !!}
                         </div>
                         {!! Form::close() !!}
                     </div>
