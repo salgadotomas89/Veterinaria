@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/mascotas', 'MascotaController');
+Route::resource('/usuario','UsuarioController');
 
 Route::auth();
 

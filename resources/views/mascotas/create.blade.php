@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <ul class="nav nav-pills">
-                            <li  class=""><a href="{{ url('/mascotas') }}">Volver</a></li>
+                            <li  class=""><a href="{{ url('mascotas') }}">Volver</a></li>
                         </ul>
                     </div>
                     <div class="panel-body">

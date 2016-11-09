@@ -11,7 +11,7 @@
                         </ul>
                     </div>
                     <div class="panel-body">
-                        {!! Form::model($mascota,array('route'=>['mascotas.update',$mascota->id],'method'=>'PUT')) !!}                        <div class="form-group">
+                        {!! Form::model($mascota,array('route'=>['mascotas',$mascota->id],'method'=>'PUT')) !!}                        <div class="form-group">
                             {!! Form::label('rut','ingrese el rut') !!}
                             {!! Form::text('rut',null,['class'=>'form-control']) !!}
                         </div>

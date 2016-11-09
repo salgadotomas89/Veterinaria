@@ -8,8 +8,8 @@
                 <div class="panel-heading">
                     <ul class="nav nav-pills">
                         <li  class=""><a href="{{ url('/') }}">Ver Rut</a></li>
-                        <li  class=""><a href="{{ url('/') }}">Crear usuario</a></li>
-                        <li  class=""><a href="{{ url('/mascotas') }}">ver mascotas</a></li>
+                        <li  class=""><a href="{{ url('/register') }}">Crear usuario</a></li>
+                        <li  class=""><a href="{{ url('mascotas') }}">ver mascotas</a></li>
 
                     </ul>
                 </div>
